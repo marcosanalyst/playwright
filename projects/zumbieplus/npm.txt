@@ -1,0 +1,77 @@
+##############################
+Instalação:
+- Visual Code
+- Node
+- npm init playwright@latest
+- JavaScript / TypeScript
+- tests
+- GitHub Actions? (Y/N)
+- Browsers? (Y/N)
+##############################
+Comandos:
+  npx playwright test
+    Runs the end-to-end tests.
+
+  npx playwright test --ui
+    Starts the interactive UI mode.
+
+  npx playwright test --project=chromium
+    Runs the tests only on Desktop Chrome.
+
+  npx playwright test example
+    Runs the tests in a specific file.
+
+  npx playwright test --debug
+    Runs the tests in debug mode.
+
+  npx playwright codegen
+    Auto generate tests with Codegen.
+
+We suggest that you begin by typing:
+
+    npx playwright test
+##############################
+
+===================================================
+npx playwright test --headed (ativa o modo headed)
+===================================================
+
+Subir o servidor
+- docker-compose up -d
+
+Verificar os servidores online
+- Docker os
+===================================================
+Local Host
+http://localhost:16543/browser/
+usuario: postgres
+senha: pwd123
+======================
+Senha de administrador
+admin
+admin@zombieplus.com
+======================
+
+#########
+Ao reiniciar a máquina, coloque o BD no ar
+apps/zombieplus
+- docker-compose up -d
+- docker ps -a (validar)
+======================
+Colocar API no ar
+- npm run dev
+======================
+--------------------------
+OBSERVAÇÃO: o mais fácil é iniciar o container
+através da própria interface.
+--------------------------
+
+#############
+Não executar o comando a baixo! Somente se necessário!
+-docker-compose down (remove e exclui o ambiente/db)
+###################
+Testes de Regressão
+https://qaxperience.notion.site/Zombie-Regression-Tests-5d726cfee1484a2e9ee177b9467cb00c
+
+Roadmap
+https://whimsical.com/zombie-roadmap-2G4AWdgEXavAxBQidogS4o
